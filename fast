@@ -1,0 +1,18 @@
+# meine befehle
+alias acs="apt-cache search "
+alias vless="vim -u ~/.vi-hil" 
+alias btdl="btdownloadcurses.bittornado --max_upload_rate 12 --minport 9418 --maxport 9418"
+alias l='ls -lh'
+alias e='emacsclient -c'
+alias lsize='ls -lsh'
+alias lt='ls -ltrh'
+alias ".."='cd ..'
+alias f='find | grep '
+alias gg='git grep '
+alias gf='git ls-files | grep '
+
+alias rmbackups="find . -regex '.*?~$' -exec rm '{}' \;"
+alias rmpycs="find . -regex '.*?pyc$' -exec rm '{}' \;"
+
+alias xrced="python /usr/lib/python2.3/site-packages/wx-2.6-gtk2-unicode/wx/tools/XRCed/xrced.py"
+alias scala="rlwrap scala -Xnojline"

@@ -1,0 +1,16 @@
+if [ "$PS1" ]; then
+    git_branch () { 
+	    git branch > /dev/null 2> /dev/null;
+	    if (( $? == 0 )); then 
+	        echo -e ":git:$(git branch | grep '*')"
+	    fi
+    }
+    export PS1="\n$ (\e[30;1m\w\e[0m)\$(git_branch)\n\$ "
+fi
+
+export GIT_AUTHOR_NAME="Thomas Hunger"
+export GIT_COMMITTER_NAME="Thomas Hunger"
+export GIT_COMMITTER_EMAIL="tehunger@gmail.com"
+export GIT_AUTHOR_EMAIL="tehunger@gmail.com"
+export PAGER="/bin/more"
+export GREP_OPTIONS='--color=auto' 
