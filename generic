@@ -1,0 +1,6 @@
+# local development
+export EDITOR="emacs"
+export PATH="$PATH:$HOME/.scripts":"$HOME/usr/bin":"$HOME/usr/sbin":"$HOME/src/go/bin"
+export LD_LIBRARY_PATH="$HOME/usr/lib:"$LD_LIBRARY_PATH
+export PYTHONPATH="$PYTHONPATH:$HOME/usr/lib/python2.4/site-packages/"
+export PKG_CONFIG_PATH="$HOME/usr/lib/pkgconfig":$PKG_CONFIG_PATH
